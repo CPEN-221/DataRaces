@@ -1,4 +1,4 @@
-package inclass;
+package dataraces;
 
 import java.math.BigInteger;
 
@@ -19,14 +19,7 @@ public class Factorial {
     
     public static void main(String[] args) {
         
-        Thread t = new Thread(new Runnable() {
-            public void run() {
-                computeFact(19);
-            }
-        });
-        t.start(); // don't forget to start the thread
-        
-        // computeFact(19);
+        computeFact(19);
         
         computeFact(23);
     }

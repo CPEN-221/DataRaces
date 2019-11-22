@@ -1,4 +1,4 @@
-package beforeclass;
+package dataraces;
 
 // This class has a race condition in it.
 public class Computation {
