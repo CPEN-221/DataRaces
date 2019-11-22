@@ -1,4 +1,4 @@
-Example 13: Concurrency and Data Races
+Example: Concurrency and Data Races
 ===
 
 
