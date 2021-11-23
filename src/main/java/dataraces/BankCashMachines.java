@@ -24,8 +24,8 @@ public class BankCashMachines {
     }
     
     // simulate a network of cash machines, handling customer transactions concurrently
-    private static final int NUMBER_OF_CASH_MACHINES = 2;
-    private static final int TRANSACTIONS_PER_MACHINE = 1000;
+    private static final int NUMBER_OF_CASH_MACHINES = 100;
+    private static final int TRANSACTIONS_PER_MACHINE = 10000;
     
     // each ATM does a bunch of transactions that should
     // leave the account balance unchanged
@@ -40,8 +40,8 @@ public class BankCashMachines {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("starting balance is $" + balance);
 
-        System.out.println("... then " 
-                            + NUMBER_OF_CASH_MACHINES 
+        System.out.println("... then "
+                            + NUMBER_OF_CASH_MACHINES
                             + " cash machines do "
                             + TRANSACTIONS_PER_MACHINE
                             + " $1-deposit/$1-withdrawal transactions each...");
